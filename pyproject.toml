@@ -9,6 +9,7 @@ description = "Yerel, tek kullanıcılı iş yönetim sistemi: proje/görev, top
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
+authors = [{ name = "Omer Faruk Gullu" }]
 keywords = ["business-management", "small-business", "crm", "streamlit", "sqlite", "offline-first"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -48,6 +49,11 @@ dev = [
     "pytest>=8.0,<9.0",
     "ruff>=0.6",
 ]
+
+[project.urls]
+Homepage = "https://github.com/omerfarukgullu/merchant-desk"
+Repository = "https://github.com/omerfarukgullu/merchant-desk"
+Issues = "https://github.com/omerfarukgullu/merchant-desk/issues"
 
 [project.scripts]
 isyonetim = "isyonetim.cli.main:app"
