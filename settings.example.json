@@ -1,0 +1,8 @@
+{
+  "business_name": "İşletmem",
+  "currency": "TL",
+  "owner_name": "",
+  "reminder_lead_minutes": 15,
+  "digest_after_hour": 8,
+  "server_port": 8501
+}

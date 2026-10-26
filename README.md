@@ -276,4 +276,3 @@ settings.example.json    settings file template
 ## License
 
 [MIT](LICENSE).
-# merchant-desk

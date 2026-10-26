@@ -1,0 +1,45 @@
+# Sanal ortam
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# PyInstaller build çıktıları (build_exe.py / build_tray_exe.py ile yeniden üretilir)
+build/
+dist/
+*.spec
+
+# Kullanıcı verisi — gerçek iş verisi ve işletmeye özel ayarlar burada,
+# versiyon kontrolüne ASLA girmemeli. Örnek şablon: settings.example.json
+data/
+backups/
+
+# Arka plan hatırlatıcının çalışma zamanı durumu
+tray_state.json
+
+# Streamlit yerel sırlar (varsa)
+.streamlit/secrets.toml
+
+# Ortam değişkenleri (şablon olan .env.example depoya girer)
+.env
+
+# Test / linter önbellekleri
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Rapor çıktıları (CSV/Excel dışa aktarımları)
+*.csv
+*.xlsx
+
+# Editör / işletim sistemi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

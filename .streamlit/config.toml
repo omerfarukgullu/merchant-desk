@@ -1,0 +1,48 @@
+# isyonetim - özel tema: aydınlık ve karanlık mod ayrı ayrı ayarlandı.
+# Renkler renk körlüğü ve WCAG kontrast kontrolünden geçirildi
+# (primaryColor: açık modda 5.63:1, koyu modda 9.07:1).
+# Işıma/ızgara dokusu gibi, config.toml'un kapsamadığı efektler
+# isyonetim/dashboard/theme_css.py içindeki CSS ile geliyor.
+#
+# Kullanıcı sağ üstteki ☰ menüsünden Açık/Koyu/Sistem arasında geçebilir.
+
+[theme]
+base = "dark"
+font = "sans-serif"
+baseRadius = "large"
+buttonRadius = "large"
+showWidgetBorder = true
+showSidebarBorder = true
+chartCategoricalColors = [
+    "#3987e5", "#d95926", "#199e70", "#c98500",
+    "#d55181", "#008300", "#9085e9", "#e66767",
+]
+
+[theme.light]
+primaryColor = "#0369a1"
+backgroundColor = "#f9f9f7"
+secondaryBackgroundColor = "#fcfcfb"
+textColor = "#0b0b0b"
+borderColor = "#e1e0d9"
+linkColor = "#0369a1"
+
+[theme.dark]
+primaryColor = "#38bdf8"
+backgroundColor = "#0d0d0d"
+secondaryBackgroundColor = "#1a1a19"
+textColor = "#ffffff"
+borderColor = "#2c2c2a"
+linkColor = "#38bdf8"
+
+[browser]
+gatherUsageStats = false
+
+# Güvenli varsayılan: sunucu yalnızca bu bilgisayardan (localhost) erişilebilir.
+# Ağa açma kararı run_server.py içinde, komut satırı parametresiyle verilir
+# (--server.address=0.0.0.0) — böylece düz "streamlit run" ya da masaüstü
+# .exe hiçbir zaman kendiliğinden ağa açılmaz. Port, Ayarlar sayfasından
+# (data/settings.json) değiştirilebilir; run_server.py onu da geçersiz kılar.
+[server]
+address = "localhost"
+port = 8501
+showEmailPrompt = false

@@ -1,0 +1,13 @@
+# Çekirdek bağımlılıklar — CLI + dashboard için yeterlidir.
+# Ek özellikler için: requirements-dev.txt (test), pyproject.toml extras
+# (desktop = .exe paketleme, tray = arka plan hatırlatıcı).
+#
+#   pip install -r requirements.txt            # CLI + dashboard
+#   pip install -e ".[desktop,tray]"           # + masaüstü .exe + hatırlatıcı
+#   pip install -r requirements-dev.txt        # + testler
+
+typer>=0.12,<1.0
+rich>=13.0,<14.0
+streamlit>=1.35,<2.0
+pandas>=2.0,<3.0
+openpyxl>=3.1,<4.0

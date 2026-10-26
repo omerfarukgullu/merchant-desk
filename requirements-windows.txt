@@ -1,0 +1,12 @@
+# Windows'a özel, opsiyonel özellikler:
+#   - masaüstü .exe paketleme (desktop_app.py / build_exe.py)
+#   - sistem tepsisinde arka plan hatırlatıcı (tray_app.py / build_tray_exe.py)
+# Bunlar yalnızca Windows'ta anlamlıdır; CLI ve dashboard bunlar olmadan
+# da tam çalışır.
+-r requirements.txt
+
+streamlit-desktop-app>=0.3,<1.0
+pillow>=10.0
+pyinstaller>=6.0,<7.0
+pystray>=0.19,<1.0
+winotify>=1.1,<2.0
