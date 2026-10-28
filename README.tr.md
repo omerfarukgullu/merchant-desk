@@ -28,8 +28,9 @@ için Windows bildirimi ve tek komutla yedekleme var.
 
 Beşi de aynı veritabanını ve aynı veri katmanını kullanıyor:
 
-1. **Panel** — `streamlit run isyonetim/dashboard/app.py`. Günlük kullanım;
-   okumanın yanı sıra ekleme ve düzenleme de buradan.
+1. **Panel** — `run_panel.bat` ya da
+   `streamlit run isyonetim/dashboard/app.py`. Günlük kullanım; okumanın
+   yanı sıra ekleme ve düzenleme de buradan.
 2. **CLI** — `python -m isyonetim --help`. Hızlı giriş ve raporlama.
 3. **Masaüstü .exe** — `python build_exe.py`. Python kurulu olmayan bir
    bilgisayarda çift tıklayıp çalıştırmak için.
@@ -72,6 +73,8 @@ isyonetim --help
 ```bash
 streamlit run isyonetim/dashboard/app.py
 ```
+
+Windows'ta `run_panel.bat` dosyasına çift tıklamak da aynı işi yapıyor.
 
 Veritabanı yoksa kendisi oluşturur, önce CLI çalıştırmak gerekmez. Panel
 açıldığında **Ayarlar** sayfasından işletme adını, para birimini (TL, EUR,
@@ -261,6 +264,7 @@ desktop_app.py           paneli pywebview penceresinde açar
 build_exe.py             masaüstü .exe paketleme
 tray_app.py              sistem tepsisi + hatırlatıcı
 build_tray_exe.py        hatırlatıcıyı ayrı, hafif .exe'ye paketler
+run_panel.bat            paneli bu bilgisayarda açar (çift tıkla)
 run_server.py / .bat     paneli ağda erişilebilir sunucu olarak başlatır
 create_shortcut.*        masaüstü kısayolu
 create_startup_shortcut.*  hatırlatıcıyı Windows başlangıcına ekler

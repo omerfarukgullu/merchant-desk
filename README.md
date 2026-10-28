@@ -32,8 +32,9 @@ for upcoming meetings, and one-command backups.
 
 All five share the same database and the same data layer:
 
-1. **Dashboard** — `streamlit run isyonetim/dashboard/app.py`. Day-to-day
-   work; reading as well as adding and editing.
+1. **Dashboard** — `run_panel.bat`, or
+   `streamlit run isyonetim/dashboard/app.py`. Day-to-day work; reading as
+   well as adding and editing.
 2. **CLI** — `python -m isyonetim --help`. Fast entry and reporting.
 3. **Desktop .exe** — `python build_exe.py`. For double-click use on a
    machine without Python.
@@ -76,6 +77,8 @@ isyonetim --help
 ```bash
 streamlit run isyonetim/dashboard/app.py
 ```
+
+On Windows, double-clicking `run_panel.bat` does the same thing.
 
 The database is created on demand, so you do not have to run the CLI first.
 Once the dashboard is up, open the **Ayarlar** (Settings) page and fill in
@@ -266,6 +269,7 @@ desktop_app.py           opens the dashboard in a pywebview window
 build_exe.py             desktop .exe packaging
 tray_app.py              system tray + reminder
 build_tray_exe.py        packages the reminder as its own small .exe
+run_panel.bat            opens the dashboard on this machine (double-click)
 run_server.py / .bat     serves the dashboard on the network
 create_shortcut.*        desktop shortcut
 create_startup_shortcut.*  adds the reminder to Windows startup
